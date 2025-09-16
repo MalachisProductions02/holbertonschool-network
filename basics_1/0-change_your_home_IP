@@ -1,11 +1,4 @@
 #!/usr/bin/env bash
-# Backup the original hosts file (for safety)
-cp /etc/hosts /etc/hosts.bak
-
-# Remove existing lines for localhost and facebook.com
-sed -i '/localhost/d' /etc/hosts
-sed -i '/facebook.com/d' /etc/hosts
-
-# Add the required entries
-echo "127.0.0.2 localhost" >> /etc/hosts
+# Force override /etc/hosts with required lines
+echo "127.0.0.2 localhost" > /etc/hosts
 echo "8.8.8.8 facebook.com" >> /etc/hosts
