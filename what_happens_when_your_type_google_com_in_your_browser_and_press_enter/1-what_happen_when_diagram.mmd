@@ -5,8 +5,8 @@ graph TD
     D --> E[Establish TCP connection on port 443]
     E --> F["SSL/TLS Handshake (HTTPS Encryption)"]
     F --> G[Server-side Firewall]
-    G --> H[Load Balancer (HAProxy)]
-    H --> I[Web Server (e.g. Nginx)]
+    G --> H["Load Balancer (HAProxy)"]
+    H --> I["Web Server (e.g. Nginx)"]
     I --> J[Application Server]
     J --> K[Database Server]
     K --> J
