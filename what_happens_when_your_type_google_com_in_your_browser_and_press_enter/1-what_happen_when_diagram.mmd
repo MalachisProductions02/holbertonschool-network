@@ -3,7 +3,7 @@ graph TD
     B --> C[Get IP address of www.google.com]
     C --> D[Client-side Firewall]
     D --> E[Establish TCP connection on port 443]
-    E --> F[SSL/TLS Handshake (HTTPS Encryption)]
+    E --> F["SSL/TLS Handshake (HTTPS Encryption)"]
     F --> G[Server-side Firewall]
     G --> H[Load Balancer (HAProxy)]
     H --> I[Web Server (e.g. Nginx)]
